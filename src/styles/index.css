@@ -30,3 +30,19 @@
 .nav .links3 {
   text-decoration: none;
 }
+
+.footer {
+  position: absolute;
+  border-radius: 8px;
+  border-color: black;
+  border-style: outset;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 15%;
+}
+
+.footer h3 {
+  margin: auto;
+  padding: 20px;
+}
