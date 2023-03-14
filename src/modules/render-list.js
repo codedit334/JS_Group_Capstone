@@ -3,7 +3,7 @@ const renderData = (arr) => {
 
   list.innerHTML = '';
   arr.forEach((obj) => {
-    list.innerHTML += `<li> 
+    list.innerHTML += `<li data-id='${obj.show.id}'> 
           <img src='${obj.show.image.medium}' alt='poster' />
           <span class="title-wrapper">${obj.show.name} <i class="fa-regular fa-heart"></i></span>
           <span class="likes">5 likes</span>
