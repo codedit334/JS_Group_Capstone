@@ -91,3 +91,40 @@
 .reservations {
   width: 60%;
 }
+
+.details {
+  position: fixed;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(15px);
+  z-index: 2;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.pop-body {
+  background-color: #fff;
+  width: 90%;
+  margin: 10px auto;
+  padding: 0 16px;
+  border-radius: 16px;
+  overflow: auto;
+}
+
+.delete-popup {
+  width: 12px;
+  height: 12px;
+  right: 10%;
+  top: 4%;
+  position: absolute;
+  background-image: url(../images/pop-cancel.png);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
