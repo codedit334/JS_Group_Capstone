@@ -32,17 +32,62 @@
 }
 
 .footer {
-  position: absolute;
   border-radius: 8px;
   border-color: black;
   border-style: outset;
-  right: 0;
-  left: 0;
-  bottom: 0;
   height: 15%;
 }
 
 .footer h3 {
   margin: auto;
   padding: 20px;
+}
+
+/* Items list */
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  gap: 30px;
+  font-size: 150%;
+}
+
+.items-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* width: 290px; */
+  width: 25%;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.items-list li img,
+.title-wrapper {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.likes {
+  align-self: flex-end;
+}
+
+.comments,
+.reservations {
+  background-color: transparent;
+  padding: 7px 0;
+  box-shadow: 5px 5px;
+}
+
+.comments {
+  width: 50%;
+}
+
+.reservations {
+  width: 60%;
 }
