@@ -9,7 +9,7 @@ debugger
           <img src='${obj.show.image.medium}' alt='poster' />
           <span class="title-wrapper">${obj.show.name} <i class="fa-regular fa-heart"></i></span>
           <span class="likes">5 likes</span>
-          <button class="comments" onclick="activePopUp(${obj});">Comments</button>
+          <button class="comments" onclick="activePopUp(${obj.show});">Comments</button>
           
           <button class="reservations">Reservations</button>
           </li>`;console.log(obj.show)
@@ -20,7 +20,6 @@ debugger
 const details = document.querySelector('.details');
 const pop = document.querySelector('.pop-body');
 console.log(pop)
-
 window.activePopUp = (index) => {
  details.style.display = 'flex'
   pop.innerHTML = `<button class="delete-popup" onclick="closeDetails()" type="button">
@@ -28,7 +27,7 @@ window.activePopUp = (index) => {
   <img  alt='poster' />
   <div class="summary">
   ljhihihihh
-  '${index.show}'
+  '${index}'
   </div>
 ` 
 
