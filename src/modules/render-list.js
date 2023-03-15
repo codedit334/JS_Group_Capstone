@@ -30,10 +30,10 @@ window.activePopUp = async (index) => {
  console.log(arrUNeed);
   pop.innerHTML = `<button class="delete-popup" onclick="closeDetails()" type="button">
   </button>
-  <img src="${arrUNeed.show.image.medium}" alt='poster' />
+  <img src="${arrUNeed}" alt='poster' />
   <div class="summary">
   ljhihihihh
-  '${index.show}'
+  '${arrUNeed.show}'
   </div>
 `;
 };
