@@ -5,7 +5,6 @@ export default async function renderData(arr) {
   const list = document.querySelector(".items-list");
   list.innerHTML = "";
   if (ourArr.length > 0) {
-    // console.log(ourArr)
     ourArr.forEach((obj) => {
       list.innerHTML += `<li data-id='${obj.show.id || 0}'> 
             <img src='${obj.show.image.medium}' alt='poster' />
@@ -17,7 +16,4 @@ export default async function renderData(arr) {
     });
     document.querySelector(".count").innerHTML = itemsCounter(".items-list li");
   }
-  // console.log(itemsCounter(".items-list li"))
-  const count = itemsCounter(".items-list li");
-  return count;
 }
