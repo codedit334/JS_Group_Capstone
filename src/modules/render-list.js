@@ -1,4 +1,3 @@
-// import { activePopUp } from "./pop-up.js";
 
 const renderData = (arr) => {
   const list = document.querySelector('.items-list');
@@ -46,7 +45,7 @@ window.activePopUp = async (index) => {
     </div>
     <div class="show-details-2">
         <span>Language:&nbsp;${arrUNeed.show.language}</span>
-        <span>Genres: ${arrUNeed.show.genres.toString()}</span>
+        <span>Genres: ${arrUNeed.show.genres[0]}</span>
     </div>
   </div>
 `;
