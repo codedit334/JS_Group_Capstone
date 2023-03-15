@@ -1,7 +1,6 @@
 import { getData } from './render-list.js';
 import { addcomment } from './Addcomment.js';
 import { fetchapi } from './fetchComment.js';
-import { commentForm } from './comment.js';
 import { listlayout } from './list.js';
 
 const details = document.querySelector('.details');
@@ -57,14 +56,12 @@ window.activePopUp = async (index) => {
       return;
     }
     addcomment(arrUNeed.show.id, user.value, text.value);
-    lists.push({ creation_date: 'few minutes ago', username: user.value, comment: text.value });
+    lists.push({ creation_date: 'few second ago', username: user.value, comment: text.value });
     comsec.innerHTML = '';
     lists.map((e) => listlayout(e, comsec));
     user.value = '';
     text.value = '';
-
   });
-
 };
 
 window.closeDetails = () => {

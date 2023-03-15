@@ -1,5 +1,5 @@
+/* eslint-disable   */
 import listlayout from './list.js';
-
 export const fetchapi = (dataid, arr) => {
   const id = dataid;
   const comres = async () => {
@@ -18,5 +18,3 @@ export const fetchapi = (dataid, arr) => {
     });
   });
 };
-
-

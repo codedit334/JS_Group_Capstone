@@ -1,4 +1,6 @@
+/* eslint-disable  */
 export const addcomment = (dataid, name, text) => {
+
   const add = async () => {
     const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jSvbwvFa0M2a3HGwtKaG/comments',
       {
@@ -15,4 +17,3 @@ export const addcomment = (dataid, name, text) => {
   };
   add();
 };
-
