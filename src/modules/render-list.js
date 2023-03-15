@@ -22,7 +22,4 @@ export async function getData() {
   return result;
 }
 
-const details = document.querySelector('.details');
-const pop = document.querySelector('.pop-body');
-
 export default getData();
