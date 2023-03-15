@@ -1,9 +1,9 @@
-import itemsCounter from "./itemCounter.js";
+import itemsCounter from './itemCounter.js';
 
 export default async function renderData(arr) {
   const ourArr = await arr;
-  const list = document.querySelector(".items-list");
-  list.innerHTML = "";
+  const list = document.querySelector('.items-list');
+  list.innerHTML = '';
   if (ourArr.length > 0) {
     ourArr.forEach((obj) => {
       list.innerHTML += `<li data-id='${obj.show.id || 0}'> 
@@ -14,6 +14,6 @@ export default async function renderData(arr) {
             <button class="reservations">Reservations</button>
             </li>`;
     });
-    document.querySelector(".count").innerHTML = itemsCounter(".items-list li");
+    document.querySelector('.count').innerHTML = itemsCounter('.items-list li');
   }
 }
