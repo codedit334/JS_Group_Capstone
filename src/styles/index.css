@@ -65,14 +65,6 @@
   margin-bottom: 40px;
 }
 
-.items-list li img,
-.title-wrapper {
-  width: 85%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-}
-
 .likes {
   align-self: flex-end;
 }
@@ -97,8 +89,9 @@
   inset: 0;
   display: none;
   flex-direction: column;
-  background: #6070ff;
-  mix-blend-mode: multiply;
+  background: #834c95;
+
+  /* mix-blend-mode: multiply; */
   backdrop-filter: blur(15px);
   z-index: 2;
   font-weight: bolder;
@@ -108,10 +101,19 @@
 .pop-body {
   background-color: #fff;
   width: 90%;
+  height: 100vh;
   margin: 10px auto;
   padding: 0 16px;
   border-radius: 16px;
-  overflow: auto;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.pop-body img {
+  margin-top: 20px;
 }
 
 .delete-popup {
@@ -127,4 +129,30 @@
   background-size: cover;
   border: none;
   cursor: pointer;
+}
+
+.show-details {
+  width: 90%;
+}
+
+.show-details-1,
+.show-details-2 {
+  display: flex;
+  gap: 40%;
+  font-size: 70%;
+  justify-content: flex-start;
+}
+
+.show-details-1 span,
+.show-details-2 span {
+  min-width: 200px;
+}
+
+/* Linter Requests: Keep Last */
+.items-list li img,
+.title-wrapper {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
