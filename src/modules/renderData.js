@@ -1,4 +1,3 @@
-import { getData } from './render-list.js';
 import itemsCounter from './itemCounter.js';
 
 export default async function renderData(arr) {
