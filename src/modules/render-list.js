@@ -1,4 +1,3 @@
-
 const renderData = (arr) => {
   const list = document.querySelector('.items-list');
   list.innerHTML = '';
