@@ -1,4 +1,8 @@
 import { getData } from './render-list.js';
+import { addcomment } from './Addcomment.js';
+import { fetchapi } from './fetchComment.js';
+import { commentForm } from './comment.js';
+import { listlayout } from './list.js';
 
 const details = document.querySelector('.details');
 const pop = document.querySelector('.pop-body');
@@ -26,7 +30,41 @@ window.activePopUp = async (index) => {
           <span>Genres: ${arrUNeed.show.genres.toString()}</span>
       </div>
     </div>
+    <div class="comment">
+                <h4>comment(<span class="head"></span>)</h4>
+                <ul class="test ">
+                
+                </ul>
+        </div>
+        <div class="addcomment">
+                  <h4>Add comment</h4>
+                  <form class ="comment-form">
+                  <input type="text" placeholder="your name" id="name">
+                  <textarea name="" id="text" cols="30" rows="10" placeholder="your view"></textarea>
+                  <button id="comment-btn">submit</button>
+                </form>
+              </div>
   `;
+  const lists = [];
+  fetchapi(arrUNeed.show.id, lists);
+  const form = document.querySelector('form');
+  const user = document.querySelector('#name');
+  const text = document.querySelector('#text');
+  const comsec = document.querySelector('.test');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (user.value === '' || text.value === '') {
+      return;
+    }
+    addcomment(arrUNeed.show.id, user.value, text.value);
+    lists.push({ creation_date: 'few minutes ago', username: user.value, comment: text.value });
+    comsec.innerHTML = '';
+    lists.map((e) => listlayout(e, comsec));
+    user.value = '';
+    text.value = '';
+
+  });
+
 };
 
 window.closeDetails = () => {
