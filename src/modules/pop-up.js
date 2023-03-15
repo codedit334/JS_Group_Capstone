@@ -1,14 +1,14 @@
-import { getData } from "./render-list.js";
-const main = document.querySelector('.main-section');
-const list = document.querySelector('.items-list');
-const header = document.querySelector('.header');
+// import getData  from './render-list.js';
 
-console.log(main)
-export const activePopUp = (id) => {
-    
-    main.innerHTML = `<div class= "pop-body">
+const main = document.querySelector('.main-section');
+// const list = document.querySelector(".items-list");
+// const header = document.querySelector(".header");
+
+const activePopUp = (id) => {
+  main.innerHTML = `<div class= "pop-body">
     <img src='${id.show.image.original}' alt='poster' />
 
-    </div>`
+    </div>`;
 };
 
+export default activePopUp;
