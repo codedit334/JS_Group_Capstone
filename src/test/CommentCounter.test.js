@@ -1,6 +1,8 @@
-
+/**
+ * @jest-environment jsdom
+*/
 import listComment from '../modules/list.js';
-import itemsCounter from '../modules/itemCounter.js';
+import itemsCounter from '../modules/itemsCounter.js';
 
 describe('Tests for comment counter', () => {
     document.body.innerHTML = `
@@ -8,7 +10,6 @@ describe('Tests for comment counter', () => {
               <div class="comment">
                   <h4 class="head">comment()</h4>
                   <ul class="test">
-                  
                   </ul>
               </div>
                   `;
@@ -21,7 +22,8 @@ describe('Tests for comment counter', () => {
     ];
   
     const test = document.querySelector('.test');
-  
+    const head = document.querySelector('.head');
+
     test('test the number of element in UI ', () => {
       expect(itemsCounter(test)).toHaveLength(0);
     });
