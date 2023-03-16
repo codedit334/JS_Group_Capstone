@@ -45,10 +45,10 @@
   border-radius: 8px;
   border: 3.5px solid #c1666b;
   height: 15%;
-  background-color: white;
+  background-color: transparent;
   padding: 1rem;
   width: 100%;
-  color:#06A1C4;
+  color: black;
   font-size: 14px;
 }
 
@@ -61,6 +61,7 @@
 .main-section {
   padding: 65px 0;
 }
+
 .items-list {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +79,7 @@
   width: 25%;
   gap: 15px;
   margin-bottom: 40px;
-  background-color: white;
+  background-color: #97dffc;
   padding: 20px;
   border-radius: 20px;
   border: 3.5px solid #c1666b;
@@ -90,7 +91,7 @@
 
 .comments,
 .reservations {
-  background-color: transparent;
+  background-color: whitesmoke;
   padding: 7px 0;
   box-shadow: 5px 5px #f4e4ba;
   border: 1px solid #c1666b;
@@ -257,73 +258,28 @@
 }
 
 /* Start */
-svg {
-  position: fixed;
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   height: 100vh;
-  z-index: -100;
-}
-#home {
-  position: fixed;
-  clip-path: url(#cache);
 }
 
-#red {
-  fill: none;
-  opacity: 0.15;
-  stroke: #CE1B5F;
-  stroke-width: 12;
-  stroke-miterlimit:10;
-  animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; 
-}
-
-#blue {
-  fill: none;
-  opacity: 0.15;
-  stroke: #06A1C4;
-  stroke-width: 12;
-  stroke-miterlimit:10;
-  animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-#light-blue {
-  fill: none;
-  opacity: 0.15;
-  stroke: #06A1C4;
-  stroke-width: 6;
-  stroke-miterlimit:10;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 800;
-  animation: draw 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;    
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
- }
-    }
-
-@keyframes show {
+@keyframes gradient {
   0% {
-    opacity: 0.15;
- }
+    background-position: 0% 50%;
+  }
+
   50% {
-    opacity: 0.2;
- }
+    background-position: 100% 50%;
+  }
+
   100% {
-    opacity: 0.15;
- }
-    }
+    background-position: 0% 50%;
+  }
+}
 
-
+/* END */
 
 /* Linter Requests: Keep Last */
 .items-list li img,
@@ -332,8 +288,4 @@ svg {
   margin: auto;
   display: flex;
   justify-content: space-around;
-}
-
-footer {
-  
 }
