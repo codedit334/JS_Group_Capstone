@@ -312,3 +312,12 @@ svg {
   display: flex;
   justify-content: space-around;
 }
+
+footer {
+  background-color: rgb(55, 54, 54);
+  padding: 1rem;
+  width: 100%;
+  bottom: 0;
+  color:#06A1C4;
+  font-size: 14px;
+}
