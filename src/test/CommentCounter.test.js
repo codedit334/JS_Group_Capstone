@@ -1,4 +1,3 @@
-/* eslint-disable  */
 import listComment from '../modules/list.js';
 import commentsCounter from '../modules/commentCount.js';
 
@@ -22,7 +21,7 @@ describe('Tests for comment counter', () => {
   const test = document.querySelector('.test');
 
   it('test the number of element in UI ', () => {
-    expect(commentsCounter(".test li")).toBe(0);
+    expect(commentsCounter('.test li')).toBe(0);
   });
 
   it('Should return the number of comments elements in the UI after adding to comment', () => {
@@ -30,6 +29,6 @@ describe('Tests for comment counter', () => {
       listComment(lists, test);
       return list;
     });
-    expect(commentsCounter(".test li")).toBe(4);
+    expect(commentsCounter('.test li')).toBe(4);
   });
 });

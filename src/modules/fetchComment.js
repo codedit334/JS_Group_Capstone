@@ -1,8 +1,7 @@
-/* eslint-disable   */
 import listComment from './list.js';
 import commentsCounter from './commentCount.js';
 
-export const fetchapi = (dataid, arr) => {
+const fetchapi = (dataid, arr) => {
   const id = dataid;
   const comres = async () => {
     const res = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jSvbwvFa0M2a3HGwtKaG/comments?item_id=${id}`);
@@ -15,8 +14,10 @@ export const fetchapi = (dataid, arr) => {
     each.map((e) => {
       listComment(e, comsec);
       const header = document.querySelector('.head');
-      header.innerHTML = commentsCounter(".test li");
+      header.innerHTML = commentsCounter('.test li');
       return e;
     });
   });
 };
+
+export default fetchapi;

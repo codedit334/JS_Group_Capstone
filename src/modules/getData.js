@@ -18,7 +18,6 @@ export async function getData() {
     });
   });
 
-  // renderData(result);
   return result;
 }
 
