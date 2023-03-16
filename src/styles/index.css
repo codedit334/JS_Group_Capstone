@@ -43,10 +43,13 @@
 
 .footer {
   border-radius: 8px;
-  border-color: black;
-  border-style: outset;
+  border: 3.5px solid #c1666b;
   height: 15%;
   background-color: white;
+  padding: 1rem;
+  width: 100%;
+  color:#06A1C4;
+  font-size: 14px;
 }
 
 .footer h3 {
@@ -55,6 +58,9 @@
 }
 
 /* Items list */
+.main-section {
+  padding: 65px 0;
+}
 .items-list {
   display: flex;
   flex-wrap: wrap;
@@ -69,15 +75,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* width: 290px; */
   width: 25%;
   gap: 15px;
   margin-bottom: 40px;
-
   background-color: white;
   padding: 20px;
   border-radius: 20px;
+  border: 3.5px solid #c1666b;
 }
 
 .likes {
@@ -88,11 +92,16 @@
 .reservations {
   background-color: transparent;
   padding: 7px 0;
-  box-shadow: 5px 5px;
+  box-shadow: 5px 5px #f4e4ba;
+  border: 1px solid #c1666b;
 }
 
 .comments {
   width: 50%;
+}
+
+.comments:hover {
+  scale: 0.95;
 }
 
 .reservations {
@@ -225,6 +234,18 @@
   width: 100%;
 }
 
+.comment-form input,
+.comment-form textarea {
+  border: 2px solid #c1666b;
+  outline: 2px solid #c1666b;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  border: 2px solid #c1666b;
+  outline: 2px solid #c1666b;
+}
+
 #name {
   height: 40px;
 }
@@ -314,10 +335,5 @@ svg {
 }
 
 footer {
-  background-color: rgb(55, 54, 54);
-  padding: 1rem;
-  width: 100%;
-  bottom: 0;
-  color:#06A1C4;
-  font-size: 14px;
+  
 }
