@@ -1,8 +1,6 @@
-/**
- * @jest-environment jsdom
-*/
+
 import listComment from '../modules/list.js';
-import itemsCounter from '../modules/itemsCounter.js';
+import itemsCounter from '../modules/commentCount.js';
 
 describe('Tests for comment counter', () => {
     document.body.innerHTML = `

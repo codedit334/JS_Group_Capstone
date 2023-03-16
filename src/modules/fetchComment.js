@@ -1,5 +1,6 @@
 /* eslint-disable   */
 import listComment from './list.js';
+
 export const fetchapi = (dataid, arr) => {
   const id = dataid;
   const comres = async () => {

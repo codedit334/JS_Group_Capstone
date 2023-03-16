@@ -1,7 +1,6 @@
-const commentCount = (section, temp) => {
-    const items = Array.from(section.children);
-    temp.innerText = items.length;
-    return items;
+const itemsCounter = (el) => {
+    const elements = document.querySelectorAll(el);
+    return elements.length;
   };
   
-  export default commentCount;
+  export default itemsCounter;
