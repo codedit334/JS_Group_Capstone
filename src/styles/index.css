@@ -121,8 +121,6 @@
   display: none;
   flex-direction: column;
   background: #834c95;
-
-  /* mix-blend-mode: multiply; */
   backdrop-filter: blur(15px);
   z-index: 2;
   font-weight: bolder;
