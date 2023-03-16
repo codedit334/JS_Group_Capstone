@@ -1,8 +1,4 @@
-// import getData  from './render-list.js';
-
 const main = document.querySelector('.main-section');
-// const list = document.querySelector(".items-list");
-// const header = document.querySelector(".header");
 
 const activePopUp = (id) => {
   main.innerHTML = `<div class= "pop-body">

@@ -1,5 +1,6 @@
 /* eslint-disable   */
 import listComment from './list.js';
+import commentsCounter from './commentCount.js';
 
 export const fetchapi = (dataid, arr) => {
   const id = dataid;
@@ -14,7 +15,7 @@ export const fetchapi = (dataid, arr) => {
     each.map((e) => {
       listComment(e, comsec);
       const header = document.querySelector('.head');
-      header.innerHTML = `${each.length}`;
+      header.innerHTML = commentsCounter(".test li");
       return e;
     });
   });
