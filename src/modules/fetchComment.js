@@ -1,5 +1,5 @@
 /* eslint-disable   */
-import listlayout from './list.js';
+import listComment from './list.js';
 export const fetchapi = (dataid, arr) => {
   const id = dataid;
   const comres = async () => {
@@ -11,7 +11,7 @@ export const fetchapi = (dataid, arr) => {
     const comsec = document.querySelector('.test');
     arr.push(...arr, ...each);
     each.map((e) => {
-      listlayout(e, comsec);
+      listComment(e, comsec);
       const header = document.querySelector('.head');
       header.innerHTML = `${each.length}`;
       return e;
