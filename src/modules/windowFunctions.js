@@ -1,13 +1,13 @@
-import { getData } from './getData.js';
-import { addcomment } from './Addcomment.js';
-import { fetchapi } from './fetchComment.js';
-import { listComment } from './list.js';
+import { getData } from "./getData.js";
+import { addcomment } from "./Addcomment.js";
+import { fetchapi } from "./fetchComment.js";
+import { listComment } from "./list.js";
 
-const details = document.querySelector('.details');
-const pop = document.querySelector('.pop-body');
+const details = document.querySelector(".details");
+const pop = document.querySelector(".pop-body");
 
 window.activePopUp = async (index) => {
-  details.style.display = 'flex';
+  details.style.display = "flex";
   let arr = getData();
   arr = await arr;
   const arrUNeed = arr.find((obj) => +obj.show.id === +index);
@@ -21,8 +21,8 @@ window.activePopUp = async (index) => {
     <div class="show-details-1">
           <span>Score: ${parseInt(arrUNeed.score * 100, 10)}%</span>
           <span>Network: ${
-  arrUNeed.show.network ? arrUNeed.show.network.name : 'Unkown'
-}</span>
+            arrUNeed.show.network ? arrUNeed.show.network.name : "Unkown"
+          }</span>
       </div>
       <div class="show-details-2">
           <span>Language:&nbsp;${arrUNeed.show.language}</span>
@@ -46,28 +46,30 @@ window.activePopUp = async (index) => {
   `;
   const lists = [];
   fetchapi(arrUNeed.show.id, lists);
-  const form = document.querySelector('form');
-  const user = document.querySelector('#name');
-  const text = document.querySelector('#text');
-  const comsec = document.querySelector('.test');
-  form.addEventListener('submit', (e) => {
+  const form = document.querySelector("form");
+  const user = document.querySelector("#name");
+  const text = document.querySelector("#text");
+  const comsec = document.querySelector(".test");
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
-    if (user.value === '' || text.value === '') {
+    if (user.value === "" || text.value === "") {
       return;
     }
     addcomment(arrUNeed.show.id, user.value, text.value);
     lists.push({
-      creation_date: 'few second ago',
+      creation_date: "few second ago",
       username: user.value,
       comment: text.value,
     });
-    comsec.innerHTML = '';
+    comsec.innerHTML = "";
     lists.map((e) => listComment(e, comsec));
-    user.value = '';
-    text.value = '';
+    const header = document.querySelector(".head");
+    header.innerHTML = commentsCounter(".test li");
+    user.value = "";
+    text.value = "";
   });
 };
 
 window.closeDetails = () => {
-  details.style.display = 'none';
+  details.style.display = "none";
 };
