@@ -89,7 +89,7 @@ HTML, CSS, NodeJS v18
 
 ## 🎥 Video Demo <a name="v-demo"></a>
 
-- Here you'll watch a short video documenting the project: [Link](https://codedit334.github.io/JS_Group_Capstone/dist/)
+- Here you'll watch a short video documenting the project: [Link](https://drive.google.com/file/d/1Uc-WlP0wAmKrkLJrQDfqdbOUCrfp7hf0/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
