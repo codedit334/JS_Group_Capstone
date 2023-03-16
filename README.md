@@ -175,6 +175,12 @@ To check for js errors run:
 - Twitter: [@oussedit](https://twitter.com/oussedit)
 - LinkedIn: [Oussama Elabdioui](https://www.linkedin.com/in/oussama-elabdioui-4677a41b6/)
 
+👤 Author2
+
+- GitHub: [@githubhandle](https://github.com/ilyassatlass)
+- Twitter: [@twitterhandle](https://twitter.com/ilyass_atlassi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ilyassatlassi/)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
