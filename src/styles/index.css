@@ -85,6 +85,10 @@
   border: 3.5px solid #c1666b;
 }
 
+.likeBtn:hover {
+  cursor: pointer;
+}
+
 .likes {
   align-self: flex-end;
 }
@@ -101,8 +105,10 @@
   width: 50%;
 }
 
-.comments:hover {
+.comments:hover,
+#comment-btn {
   scale: 0.95;
+  cursor: pointer;
 }
 
 .reservations {
