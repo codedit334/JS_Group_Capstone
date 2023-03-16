@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Module 2: Leaderboard</b></h3>
+  <h3><b>Module 2: JS Group Capstone - Grils shows</b></h3>
 
 </div>
 
@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🎥 Video Documentation](#v-demo)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -33,10 +34,10 @@
 
 # 📖 Leaderboard <a name="about-project"></a>
 
-Leaderboard is a simple web app that fetches data from api and display them, it can also send requests to the same api to save data, it uses modular architechture aswell as webpack.
+Girls shows is a simple web app that fetches aswell as store data in multiple apis and display them it uses modular architechture aswell as webpack.
 
 ## 🛠 Built With <a name="built-with"></a>
-HTML, CSS, NodeJS
+HTML, CSS, NodeJS v18
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
@@ -78,8 +79,17 @@ HTML, CSS, NodeJS
 - Modular JS architecture.
   - Use Modules.
 
+
 - Module Bundler.
   - Use Webpack.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- V DEMO -->
+
+## 🎥 Video Demo <a name="v-demo"></a>
+
+- Here you'll watch a short video documenting the project: [Link](https://codedit334.github.io/JS_Group_Capstone/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +97,7 @@ HTML, CSS, NodeJS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Link](https://codedit334.github.io/Leaderboard/dist/)
+- [Link](https://codedit334.github.io/JS_Group_Capstone/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,19 +121,19 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 ```sh
   cd my-folder
-  git clone git@github.com/codedit334/Leaderboard.git
+  git clone git@github.com/codedit334/JS_Group_Capstone.git
 ```
 ### Install
 
 Install this project with:
 ```sh
-  cd Leaderboard
+  cd JS_Group_Capstone
   npm install
 ```
 
 ### Usage
 
-Run Dev Server (Port 3000)
+Run Dev Server (Port 3001)
 
 ```
   npm run dev
@@ -224,7 +234,7 @@ I would like to thank Microverse for offering me this opportunity to learn, and 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/codedit334/Leaderboard/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/codedit334/JS_Group_Capstone/blob/main/LICENSE) licensed.
 (Check the LICENSE file)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
