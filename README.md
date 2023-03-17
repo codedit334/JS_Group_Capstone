@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Module 2: JS Group Capstone - Grils shows</b></h3>
+  <h3><b>Module 2: JS Group Capstone - Grils shows </b></h3>
 
 </div>
 
