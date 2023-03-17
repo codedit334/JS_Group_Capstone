@@ -1,6 +1,6 @@
 import commentsCounter from './commentCount';
 
-export const listComment = (e, comsec) => {
+const listComment = (e, comsec) => {
   const temp = `${e.creation_date} ${e.username} : ${e.comment}`;
   const per = document.createElement('li');
   per.innerHTML = temp;
