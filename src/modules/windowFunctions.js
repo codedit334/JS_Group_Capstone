@@ -7,7 +7,7 @@ const pop = document.querySelector(".pop-body");
 
 window.activePopUp = async (index) => {
   details.style.display = "flex";
-  
+
   const lists = [];
 
   let arr = getData();
