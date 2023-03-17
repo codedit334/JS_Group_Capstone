@@ -1,7 +1,7 @@
 import { getData } from './getData.js';
-import { addcomment } from './Addcomment.js';
-import { fetchapi } from './fetchComment.js';
-import { listComment } from './list.js';
+import addcomment from './Addcomment.js';
+import fetchapi from './fetchComment.js';
+import listComment from './list.js';
 import commentsCounter from './commentCount.js';
 
 const details = document.querySelector('.details');
