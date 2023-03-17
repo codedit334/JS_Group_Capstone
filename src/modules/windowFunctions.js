@@ -1,11 +1,14 @@
-import { getData } from './getData.js';
-import submitListen from './submitListen.js';
+import { getData } from "./getData.js";
+import submitListen from "./submitListen.js";
+import fetchapi from "./fetchComment.js";
 
-const details = document.querySelector('.details');
-const pop = document.querySelector('.pop-body');
+const details = document.querySelector(".details");
+const pop = document.querySelector(".pop-body");
 
 window.activePopUp = async (index) => {
-  details.style.display = 'flex';
+  details.style.display = "flex";
+  
+  const lists = [];
 
   let arr = getData();
   arr = await arr;
@@ -22,8 +25,8 @@ window.activePopUp = async (index) => {
     <div class="show-details-1">
           <span>Score: ${parseInt(arrUNeed.score * 100, 10)}%</span>
           <span>Network: ${
-  arrUNeed.show.network ? arrUNeed.show.network.name : 'Unkown'
-}</span>
+            arrUNeed.show.network ? arrUNeed.show.network.name : "Unkown"
+          }</span>
       </div>
       <div class="show-details-2">
           <span>Language:&nbsp;${arrUNeed.show.language}</span>
@@ -46,9 +49,10 @@ window.activePopUp = async (index) => {
               </div>
   `;
 
+  fetchapi(arrUNeed.show.id, lists);
   submitListen(arrUNeed);
 };
 
 window.closeDetails = () => {
-  details.style.display = 'none';
+  details.style.display = "none";
 };
