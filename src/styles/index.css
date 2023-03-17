@@ -83,6 +83,12 @@
   padding: 20px;
   border-radius: 20px;
   border: 3.5px solid #c1666b;
+  box-shadow: 5px 1px 25px 1px #535353;
+  min-width: 220px;
+}
+
+.items-list li:hover {
+  scale: 1.01;
 }
 
 .likeBtn:hover {
@@ -266,7 +272,7 @@ body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+  height: 100%;
 }
 
 @keyframes gradient {
@@ -292,4 +298,8 @@ body {
   margin: auto;
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  
 }
