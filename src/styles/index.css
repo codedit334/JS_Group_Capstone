@@ -112,9 +112,13 @@
 }
 
 .comments:hover,
-#comment-btn {
+#comment-btn:hover {
   scale: 0.95;
   cursor: pointer;
+}
+
+.comments:hover {
+  box-shadow: 4px 4px #f4e4ba;
 }
 
 .reservations {
