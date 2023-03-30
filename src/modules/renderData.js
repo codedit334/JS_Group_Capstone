@@ -1,4 +1,5 @@
 import itemsCounter from './itemCounter.js';
+import { getData } from './getData.js';
 
 export default async function renderData(arr) {
   const ourArr = await arr;
@@ -18,3 +19,6 @@ export default async function renderData(arr) {
     document.querySelector('.count').innerHTML = itemsCounter('.items-list li');
   }
 }
+
+const dataArr = getData();
+renderData(dataArr);

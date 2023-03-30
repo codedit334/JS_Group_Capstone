@@ -19,6 +19,3 @@ window.addLike = async (tvID) => {
   renderData(dataArr);
   return response;
 };
-
-const dataArr = getData();
-renderData(dataArr);
