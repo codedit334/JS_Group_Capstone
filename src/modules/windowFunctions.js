@@ -10,7 +10,9 @@ window.activePopUp = async (index) => {
 
   const lists = [];
 
-  let arr = getData();
+  const searchQuery = document.querySelector('.items-search-input').value || 'girls';
+
+  let arr = getData(searchQuery);
   arr = await arr;
 
   const arrUNeed = arr.find((obj) => +obj.show.id === +index);
