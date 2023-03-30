@@ -15,7 +15,9 @@ window.addLike = async (tvID) => {
     },
   );
 
-  const dataArr = getData();
+  const searchQuery = document.querySelector('.items-search-input').value || 'girls';
+
+  const dataArr = getData(searchQuery);
   renderData(dataArr);
   return response;
 };
