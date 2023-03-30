@@ -52,7 +52,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Girls TV shows',
+      title: 'TV Shows Search',
       filename: 'index.html',
       template: 'src/index.html',
     }),
